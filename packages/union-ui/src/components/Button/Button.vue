@@ -33,6 +33,21 @@ withDefaults(defineProps<{ type?: 'primary' }>(), {
   border: 1px solid rgba(25, 36, 41, 0.4);
   border-radius: 4px;
 
+  :deep(svg) {
+    height: 14px;
+    width: 14px;
+  }
+
+
+  .prefix-icon,
+  .suffix-icon {
+
+    svg {
+      height: 14px;
+      width: 14px;
+    }
+  }
+
   &.primary {
     background-image: linear-gradient(-44deg, #2275FF 0%, #6740FF 100%);
     border: 0;
@@ -42,6 +57,11 @@ withDefaults(defineProps<{ type?: 'primary' }>(), {
     .prefix-icon,
     .suffix-icon {
       fill: #FFFFFF;
+
+      >svg {
+        height: 14px;
+        width: 14px;
+      }
     }
 
     &:hover {

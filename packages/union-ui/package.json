@@ -39,5 +39,9 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "@vueuse/core": "^10.9.0",
+    "vxe-table": "^4.6.13"
   }
 }

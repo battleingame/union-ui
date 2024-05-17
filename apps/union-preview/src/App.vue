@@ -1,20 +1,25 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
-import { Button } from '@union-design/ui'
+import { Button, Tooltip, CancelButton, SaveButton, ResetButton } from '@union-design/ui'
 import icon from './assets/icon.vue'
 </script>
 
 <template>
   <div>
-    <Button type="primary">
-      <template #suffix-icon>
-        <icon />
-      </template>
-      111
-      <template #prefix-icon>
-        <icon />
-      </template>
-    </Button>
+    <CancelButton></CancelButton>
+    <SaveButton></SaveButton>
+    <ResetButton></ResetButton>
+    <Tooltip>
+      <Button type="primary">
+        <template #suffix-icon>
+          <icon />
+        </template>
+        111
+        <template #prefix-icon>
+          <icon />
+        </template>
+      </Button>
+    </Tooltip>
     <Button>
       <template #suffix-icon>
         <icon />
@@ -24,6 +29,7 @@ import icon from './assets/icon.vue'
         <icon />
       </template>
     </Button>
+
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
