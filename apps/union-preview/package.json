@@ -1,0 +1,25 @@
+{
+  "name": "@union-design/preview",
+  "private": false,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "vue": "^3.4.21",
+    "@union-design/ui": "workspace:*"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.18.0",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "eslint": "^9.2.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6"
+  }
+}
